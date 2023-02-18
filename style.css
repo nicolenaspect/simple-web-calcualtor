@@ -11,7 +11,7 @@
    
    body,
    .button-container,
-   .calculator__display {
+   .calculator-screen {
        display: flex;
        
    }
@@ -68,24 +68,19 @@
        height: 3.5rem;
    }
    
-   .calculator__display {
+   .calculator-screen {
        background-color: var(--secondarycolor);
        margin: 1.5625rem 2.25rem auto 2.25rem;
        height: 5.0625rem;
        max-width: 15.875rem;
        border-radius: 0.25rem;
-       flex-direction: row-reverse;
-       align-items: center;
        color: var(--text);
        font-family: Roboto sans-serif;
        font: var(--secondstyle);
-       overflow: hidden;
-       text-overflow: ellipsis;
-   
- 
+       text-align: end;
    }
    
-   .key--operator {
+   .orange {
        background-color: #E79C25;
        color: var(--maincolor);
    }

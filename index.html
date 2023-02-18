@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="calculator">
-        <div class="calculator__display">0</div>
-        <div class="calculator__keys">
-            <div class="button-container">
-                <button class="key--operator big" data-action="clear">AC</button>
-                <button class="key--operator" data-action="decimal" >.</button>
-                <button class="key--operator"data-action="divide">&divide;</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="key--operator" data-action="multiplication">&times;</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="key--operator" data-action="minus">&minus;</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="key--operator" data-action="plus">&plus;</button>
-                <button class="big">0</button>
-                <button class="key--operator big" data-action="equals">&equals;</button>
-            </div>
+      <input type="text" class="calculator-screen" value="" disabled />
+      <div class="calculator__keys">
+        <div class="button-container">
+          <button type="button" class="big orange all-clear" value="ac">C</button>
+          <button type="button" value ='.' class="orange decimal">.</button>
+          <button type="button" value="/" class="orange operator" data-operation>&divide;</button>
+          <button type="button" value ='7' data-number>7</button>
+          <button type="button" value="8" data-number>8</button>
+          <button type="button" value="9" data-number>9</button>
+          <button type="button" value="*" class="orange operator" data-operation>&times;</button>
+          <button type="button" value="4" data-number>4</button>
+          <button type="button" value="5" data-number>5</button>
+          <button type="button" value="6" data-number>6</button>
+          <button type="button" value="-" class="orange operator" data-operation>&minus;</button>
+          <button type="button" value="1" data-number>1</button>
+          <button type="button" value="2" data-number>2</button>
+          <button type="button" value="3" data-number>3</button>
+          <button type="button" value="+" class="orange operator" data-operation>&plus;</button>
+          <button type="button" value="0" class="big" data-number>0</button>
+          <button type="button" value="=" class=" orange operator big" data-equals>&equals;</button>
         </div>
+      </div>
     </div>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
